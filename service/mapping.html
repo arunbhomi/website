@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GIS Mapping | Arun Kumar Bhomi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      gap: 30px;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #ffffff;
+      padding: 20px;
+      border-left: 4px solid #003366;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      height: fit-content;
+      position: sticky;
+      top: 30px;
+      align-self: flex-start;
+    }
+
+    .sidebar h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .project {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 5px solid #003366;
+      border-radius: 5px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+    }
+
+    .project h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .author {
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        position: static;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>GIS Mapping Projects</h1>
+    <p>GIS-based spatial applications developed to support urban planning, emergency response, service delivery, and community mapping using interactive maps and open geospatial data.</p>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar on the left -->
+    <aside class="sidebar">
+      <h2>Technologies Used:</h2>
+      <ul>
+        <li>ArcMap 10.8</li>
+        <li>QGIS</li>
+        <li>ArcGIS Pro</li>
+        <li>GeoJSON & Shapefiles</li>
+        <li>OpenStreetMap (OSM)</li>
+        <li>Custom Map Layout Design</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+    </aside>
+
+    <!-- Main content on the right -->
+    <div class="content">
+      <main>
+        <section class="project">
+          <h2>1. Earthquake Response Mapping</h2>
+          <p>This WebGIS project displays earthquake locations and identifies nearby affected features. It allows users to filter quakes by date and magnitude and lists surrounding infrastructures and administrative units, supporting rapid disaster response planning.</p>
+          <div class="author"><strong>Developed by:</strong> Arun Kumar Bhomi and Rabina Poudyal</div>
+        </section>
+
+        <section class="project">
+          <h2>2. Kathmandu Metropolitan City Parcel Map</h2>
+          <p>Integrates building, parcel, zoning, and road classification layers for KMC. Users can click a parcel to retrieve land use details and municipal classifications. The system is built to support planners and citizens with parcel-level spatial insight.</p>
+          <div class="author"><strong>Developed by:</strong> Arun Kumar Bhomi</div>
+        </section>
+
+        <section class="project">
+          <h2>3. House Numbering WebGIS</h2>
+          <p>This system links buildings to house numbers and owner details using digitized shapefiles. The searchable interface allows querying by house number, ward, or owner, improving governance and municipal record management.</p>
+          <div class="author"><strong>Developed by:</strong> Arun Kumar Bhomi and Rabina Poudyal</div>
+        </section>
+
+        <section class="project">
+          <h2>4. Women-Focused POI Mapping</h2>
+          <p>A participatory mapping project focusing on healthcare and emergency-related points of interest (POIs) for women. Data was collected using field mapping and OSM tools, aimed at improving access to safe, relevant facilities.</p>
+          <div class="author"><strong>Initiated and Led by:</strong> Arun Kumar Bhomi and Rabina Poudyal</div>
+        </section>
+
+        <section class="project">
+          <h2>5. Road Survey and Routing Application</h2>
+          <p>Using a GeoJSON road network, this app displays optimized routes between two locations on a Leaflet map without requiring an external API key. The application supports route visualization based on municipal road datasets.</p>
+          <div class="author"><strong>Developed by:</strong> Arun Kumar Bhomi and Rabina Poudyal</div>
+        </section>
+
+        <section class="project">
+          <h2>6. Different Map Layouts Based on Needs</h2>
+          <p>Created GIS layouts tailored for specific use cases such as zoning maps, hazard maps, cadastral overlays, and POI access maps. Each layout is optimized for its audience—planners, emergency teams, or citizens—using thoughtful symbology and legends.</p>
+          <div class="author"><strong>Designed by:</strong> Arun Kumar Bhomi</div>
+        </section>
+
+        <section class="project">
+          <h2>7. Other Web Maps</h2>
+          <p>This section includes additional GIS tools built for specific local needs, such as waste complaint visualization, pipeline restoration updates, and map-based feedback platforms for residents.</p>
+          <div class="author"><strong>Projects by:</strong> Arun Kumar Bhomi</div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Arun Kumar Bhomi | Geomatics Engineer</p>
+  </footer>
+</body>
+
+</html>

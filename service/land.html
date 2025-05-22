@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Land Measurement | Arun Kumar Bhomi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .sidebar {
+      flex: 1;
+      position: sticky;
+      top: 30px;
+      align-self: flex-start;
+      background: #ffffff;
+      padding: 20px;
+      border-left: 5px solid #003366;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      margin-right: 30px;
+      height: fit-content;
+    }
+
+    .sidebar h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      padding-left: 20px;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .content {
+      flex: 2.5;
+    }
+
+    .section {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 5px solid #003366;
+      border-radius: 5px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        position: static;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Land Measurement</h1>
+    <p>Hands-on experience in practical land surveying and parcel delineation using various tools.</p>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Instruments Used:</h2>
+      <ul>
+        <li>Measuring Tape</li>
+        <li>Wooden Peg</li>
+        <li>Rope</li>
+        <li>Laser Distance Meter (EDM)</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section class="section">
+        <h2>Land Measurement at Changunarayan Municipality, Bhaktapur</h2>
+        <p>At Changunarayan Municipality, I measured a land area of approximately <strong>8 Ropani</strong> using traditional tools such as measuring tape and rope. The area was divided into <strong>six distinct parcels</strong> through careful planning and field assessment.</p>
+        <p>Monumentation was performed using <strong>wooden pegs and ropes</strong> to mark parcel boundaries physically. The process allowed for visible and accurate delineation, ensuring clarity for landowners and local authorities involved in land management.</p>
+      </section>
+
+      <section class="section">
+        <h2>Measurement of a Developed Property using Tape and EDM</h2>
+        <p>In another instance, I measured a land parcel that had a residential building already constructed. This task required more precision and speed, so I employed a combination of <strong>tape and a Laser Distance Meter (EDM)</strong>.</p>
+        <p>The tape was used for direct access lines and shorter measurements, while the EDM was vital for corners, diagonal spans, and inaccessible parts due to the structure. This mixed-method approach ensured <strong>accurate boundary data</strong> for both the building footprint and the remaining open land.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Arun Kumar Bhomi | Geomatics Engineer</p>
+  </footer>
+
+  <script>
+    console.log("Land Measurement page loaded.");
+  </script>
+</body>
+</html>

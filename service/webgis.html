@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebGIS Work | Arun Kumar Bhomi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      gap: 30px;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #ffffff;
+      padding: 20px;
+      border-left: 4px solid #003366; /* changed from right to left */
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      height: fit-content;
+      position: sticky;
+      top: 30px;
+      align-self: flex-start;
+    }
+
+    .sidebar h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .project {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 5px solid #003366;
+      border-radius: 5px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+    }
+
+    .project h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .author {
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        position: static;
+        margin-bottom: 30px;
+        border-left: 4px solid #003366; /* still on left for mobile */
+        border-right: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>WebGIS Projects</h1>
+    <p>Interactive Web Mapping applications developed using Leaflet.js and geospatial data integration for public use,
+      urban analysis, and decision-making.</p>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar on the left -->
+    <aside class="sidebar">
+      <h2>Technologies Used:</h2>
+      <ul>
+        <li>Leaflet.js</li>
+        <li>GeoJSON</li>
+        <li>Shapefile to GeoJSON Conversion</li>
+        <li>Parcel & Building Data</li>
+        <li>Interactive Feature Queries</li>
+        <li>Routing & Navigation Tools</li>
+        <li>OpenStreetMap Base Layers</li>
+        <li>Web Hosting Platforms</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+    </aside>
+
+    <!-- Main content on the right -->
+    <div class="content">
+      <main>
+        <section class="project">
+          <h2>1. Earthquake Areas and Affected Features</h2>
+          <p>This interactive WebGIS platform visualizes real-time earthquake data using APIs. Users can select
+            earthquakes based on date and magnitude. Clicking on a specific earthquake displays the location and a list of
+            affected features such as nearby buildings, infrastructure, and administrative boundaries.</p>
+          <div class="author"><strong>Developed by:</strong> Arun Kumar Bhomi and Rabina Poudyal</div>
+        </section>
+
+        <section class="project">
+          <h2>2. House Numbering Map</h2>
+          <p>This WebGIS map displays digitized buildings along with boundaries and essential municipal features. It
+            supports interactivity where clicking on buildings reveals information such as owner name, ward number, and
+            house number. The system also allows users to search for buildings based on these attributes, improving urban
+            management and service delivery.</p>
+          <div class="author"><strong>Developed by:</strong> Arun Kumar Bhomi and Rabina Poudyal</div>
+        </section>
+
+        <section class="project">
+          <h2>3. KMC Web Portal</h2>
+          <p>A comprehensive municipal WebGIS platform for Kathmandu Metropolitan City that integrates multiple spatial
+            layers including buildings, roads, schools, and cadastral parcels. On clicking a land parcel, users can access
+            detailed information such as land use zone, GLD road classification, and more. The platform aims to support
+            urban planning and governance through better spatial data access.</p>
+          <div class="author"><strong>Developed by:</strong> Arun Kumar Bhomi</div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Arun Kumar Bhomi | Geomatics Engineer</p>
+  </footer>
+</body>
+
+</html>

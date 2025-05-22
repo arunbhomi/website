@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Field Survey and Experiences | Arun Kumar Bhomi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #005a87;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            position: sticky;
+            top: 30px;
+            align-self: flex-start;
+            background: #ffffff;
+            padding: 20px;
+            border-left: 5px solid #005a87;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            margin-right: 30px;
+            height: fit-content;
+        }
+
+        .sidebar h2 {
+            color: #005a87;
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            padding-left: 20px;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .content {
+            flex: 2.5;
+        }
+
+        .section {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid #005a87;
+            border-radius: 5px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            color: #005a87;
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                position: static;
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Field Survey Experiences.</h1>
+        <p>A summary of my practical survey work and tools I’ve mastered as a Geomatics Engineer.</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Instruments I Have Used:</h2>
+            <ul>
+                <li>Total Station</li>
+                <li>UAV (Drone)</li>
+                <li>LiDAR</li>
+                <li>Theodolite</li>
+                <li>Level Machine</li>
+                <li>Chain and Compass</li>
+                <li>GNSS Instruments</li>
+                <li>Other traditional & modern tools</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+
+            <section class="section">
+                <h2>UAV Survey for Mapping and 3D Modeling</h2>
+                <p>I've conducted multiple UAV-based aerial surveys to generate orthomosaic maps, DEMs, and topographic
+                    layers. Post-processing was carried out using Pix4D and Agisoft Metashape. I also created 3D models
+                    of buildings and terrains, which were used in visualization and planning workflows.</p>
+            </section>
+
+            <section class="section">
+                <h2>Bridge, Route, and Alignment Survey</h2>
+                <p>I’ve taken part in route alignment and bridge survey projects. My work included reconnaissance
+                    survey, centerline marking, and terrain data collection. The use of Total Station and compass helped
+                    establish new alignments efficiently. These experiences strengthened my skills in profile leveling,
+                    cross-sectioning, and road design evaluation.</p>
+            </section>
+
+            <section class="section">
+                <h2>LiDAR Survey for 3D Surface Modeling</h2>
+                <p>I was involved in a LiDAR survey project aimed at generating high-accuracy 3D models. I worked on
+                    planning the flight path, operating LiDAR sensors, and processing point cloud data. This task
+                    enabled a deep understanding of terrain modeling, object classification, and volumetric analysis
+                    using LiDAR technology.</p>
+            </section>
+
+
+            <section class="section">
+                <h2>Hydropower Survey (Academic Field Project)</h2>
+                <p>During my academic field survey, I participated in the layout and mapping of a proposed hydropower
+                    site. I assisted in establishing control points using GNSS, capturing terrain profiles, and
+                    preparing topographic maps using Total Station. It gave me exposure to survey workflows in remote
+                    terrain for hydropower development.</p>
+            </section>
+            <section class="section">
+                <h2>Leveling Survey for Height Difference</h2>
+                <p>I used a Level Machine to determine the elevation change between two points roughly 5 kilometers
+                    apart. The survey was conducted with careful benchmark transfer, and the final result showed an
+                    elevation difference of approximately 85 meters. This task improved my precision in reading levels,
+                    recording backsight and foresight, and calculating height of instrument.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Arun Kumar Bhomi | Geomatics Engineer</p>
+    </footer>
+
+    <script>
+        console.log("Two-column experience page loaded.");
+    </script>
+</body>
+
+</html>
