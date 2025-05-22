@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGIS Work | Arun Kumar Bhomi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #005a87;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid #005a87;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.01);
+        }
+
+        .project h2 {
+            margin-top: 0;
+            color: #005a87;
+        }
+
+        .author {
+            font-weight: bold;
+            color: #444;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #eee;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .project {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>WebGIS Work</h1>
+        <p>A collection of interactive GIS-based web applications developed to solve real-world spatial problems.</p>
+    </header>
+
+    <main>
+
+        <section class="project">
+            <h2>1. KMC Web Portal</h2>
+            <p>A comprehensive municipal WebGIS platform for Kathmandu Metropolitan City that integrates multiple
+                spatial layers including buildings, roads, schools, and cadastral parcels. On clicking a land parcel,
+                users can access detailed information such as land use zone, GLD road classification, and more. The
+                platform aims to support urban planning and governance through better spatial data access.</p>
+            <div class="author">Developed by: Arun Kumar Bhomi</div>
+        </section>
+
+        <section class="project">
+            <h2>2. Earthquake Areas and Affected Features</h2>
+            <p>This interactive WebGIS platform visualizes real-time earthquake data using APIs. Users can select
+                earthquakes based on date and magnitude. Clicking on a specific earthquake displays the location and a
+                list of affected features such as nearby buildings, infrastructure, and administrative boundaries.</p>
+            <div class="author">Developed by: Arun Kumar Bhomi and Rabina Poudyal</div>
+        </section>
+
+        <section class="project">
+            <h2>3. House Numbering Map</h2>
+            <p>This WebGIS map displays digitized buildings along with boundaries and essential municipal features. It
+                supports interactivity where clicking on buildings reveals information such as owner name, ward number,
+                and house number. The system also allows users to search for buildings based on these attributes,
+                improving urban management and service delivery.</p>
+            <div class="author">Developed by: Arun Kumar Bhomi and Rabina Poudyal</div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arun Kumar Bhomi | Geomatics Engineer</p>
+    </footer>
+
+    <script>
+        console.log("WebGIS portfolio loaded.");
+    </script>
+</body>
+
+</html>
